@@ -1,3 +1,2 @@
 import { useState } from 'react';
-// Developer's name, navigation with titles corresponding to
-// different sections of portfolio
+// Developer's name, navigation for About Me (Default), Portfolio, Contact, Resume

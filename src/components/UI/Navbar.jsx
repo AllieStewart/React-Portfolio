@@ -11,3 +11,4 @@ export default function Nav({ links }) {
       </nav>
     );
   }
+  // might not be necessary

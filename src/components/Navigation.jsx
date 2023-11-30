@@ -23,3 +23,4 @@ export default function Nav() {
   );
 }
 // About Me (Default), Portfolio, Contact, Resume
+// Navbar to Header instead?
