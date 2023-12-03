@@ -1,32 +1,50 @@
 import { useState } from 'react';
+import { validateEmail } from './helpers';
 // handleFormSubmit for Name, Email, Message
 // Notify if any three not entered if cursor moves off them (and empty)
 // Notify if email is invalid
-function ContactForm(props) {
+function ContactForm() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
+
+    const handleChange = (e) => {
+        // setInput(e.target.value);
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    if (inputType === 'name') {
+        setName(inputValue);
+      } else if (inputType === 'email') {
+        setEmail(inputValue);
+      } else {
+        setMessage(inputValue);
+      }
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        props.onSubmit({
-            name: name,
-            email: email,
-            message: message
-        })
+        // props.onSubmit({
+        //     name: name,
+        //     email: email,
+        //     message: message
+        // })
+        if(!validateEmail(email)){
+            setErrorMessage('Email is invalid.');
+            return;
+        }
+        // Code here for if cursor moves out of empty box.
 
         setName('');
         setEmail('');
         setMessage('');
     };
 
-    const handleChange = (e) => {
-        setInput(e.target.value);
-    };
-
     return (
-        <div>
+        <div className="container text-center">
             <form className='contact-form' onSubmit={handleSubmit}>
                 <input type="text"
                 placeholder='Name'
@@ -35,7 +53,7 @@ function ContactForm(props) {
                 className='name-input'
                 onChange={handleChange}
                 ></input>
-                <input type="text"
+                <input type="email"
                 placeholder='random@gmail.com'
                 value={email}
                 name='email'
@@ -49,8 +67,13 @@ function ContactForm(props) {
                 className='message-input'
                 onChange={handleChange}
                 ></input>
+                <button type="submit">Contact</button>
             </form>
-            <button className="contact-button">Contact</button>
+            {errorMessage && (
+        <div>
+          <p className="error-text">{errorMessage}</p>
+        </div>
+      )} 
         </div>
     );
 }
