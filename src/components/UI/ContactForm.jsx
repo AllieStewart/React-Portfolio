@@ -67,7 +67,7 @@ function ContactForm() {
                 className='message-input'
                 onChange={handleChange}
                 ></input>
-                <button type="submit">Contact</button>
+                <button className='contact-button' type="submit">Contact</button>
             </form>
             {errorMessage && (
         <div>

@@ -18,6 +18,126 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --prussian-blue: #04395eff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background-color: var(--prussian-blue);
+}
+
+.portfolio-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 800px;
+  min-height: 600px;
+  background: black;
+  text-align: center;
+  margin: 32px auto;
+  border-radius: 20px;
+  padding-bottom: 32px;
+}
+
+h1 {
+  margin: 32px 0;
+  color: rgb(66, 171, 231);
+  font-size: 24px;
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h2 {
+  color: rgb(66, 171, 231);
+}
+
+h3 {
+  margin: auto;
+  color: rgb(66, 171, 231);
+  font-size: 20px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.contact-form {
+  margin-bottom: 32px;
+  margin: 20px;
+}
+
+.contact-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.contact-input::placeholder {
+  color: #e2e2e2;
+}
+
+.contact-button {
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  background: #5d0cff;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.contact-input.edit {
+  border: 2px solid #149fff;
+}
+
+.contact-button.edit {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+  padding: 16px 22px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 a {
@@ -27,22 +147,6 @@ a {
 }
 a:hover {
   color: #535bf2;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-.form {
-  margin: 20px;
-}
-
-.form input {
-  display: block;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  width: 100%;
 }
 
 @media (prefers-color-scheme: light) {
