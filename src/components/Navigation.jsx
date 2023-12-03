@@ -1,10 +1,9 @@
 import { Link } from 'react-router-dom';
-import Navbar from './UI/Navbar';
+import Header from './Header';
 
-export default function Nav() {
-  // The Navbar UI component will render each of the Link elements in the links prop
+export default function Navigation() {
   return (
-    <Navbar
+    <Header
       links={[
         <Link key={1} className="nav-link text-light" to="/">
           About Me
@@ -22,5 +21,3 @@ export default function Nav() {
     />
   );
 }
-// About Me (Default), Portfolio, Contact, Resume
-// Navbar to Header instead?
