@@ -3,10 +3,10 @@ export default function Footer() {
         <Grid>
             <div class="footer"><center className="footerIcons">
                 <a href="">
-                    <Image src="giticon.png" className="gitHubIcon" />
+                    <img src="giticon.png" className="gitHubIcon" />
                 </a>
                 <a href="">
-                    <Image src="linkedinicon.png" className="linkedInIcon" />
+                    <img src="linkedinicon.png" className="linkedInIcon" />
                 </a>
             </center>
             </div>
