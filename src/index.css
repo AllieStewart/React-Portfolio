@@ -95,10 +95,33 @@ a:hover {
 .card-title {
   color: var(--powder-blue);
   text-shadow: 2px 2px 5px var(--prussian-blue);
+  font-size: 30px;
+  text-align: center;
 }
 
-.deployIMG, .githhubIMG {
-  align-items: center;
+.card {
+  filter:brightness(50%);
+}
+
+.deployIMG {
+  filter: grayscale();
+  padding-left: 20px;
+}
+
+.githubIMG {
+  padding-left: 50%;
+}
+
+.card:hover {
+  filter: none;
+}
+
+.deployIMG:hover {
+  filter: none;
+}
+
+.githubIMG:hover {
+  filter: invert();
 }
 
 /* ContactForm */
