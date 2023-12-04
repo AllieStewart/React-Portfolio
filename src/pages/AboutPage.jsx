@@ -3,8 +3,8 @@ export default function AboutPage() {
     return (
       <div className="container pt-4">
         <h3>About Me</h3>
-          <img className="about-img" src="../../public/about/about.jpg" alt=""/>
-        <p className="about-p">
+          <img className="about-img" src="/about/about.jpg" alt=""/>
+        <p className="container-inline about-p">
           My name is Allie Stewart.
           I was born and raised in Texas.
           My interests include drawing, video games, videography,

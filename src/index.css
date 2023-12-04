@@ -1,11 +1,7 @@
-/* CSS HEX */
-/* --prussian-blue: #04395eff;
---iris: #474acaff;
---celestial-blue: #0d98ccff;
---cornflower-blue: #6f9bf6ff;
---powder-blue: #adcef6ff; */
-/* rgba(255, 255, 255, 0.87); */
+/* Start of CSS file */
+/* Contains styling for App.jsx/main.jsx */
 
+/* Root + Wildcard as baseline */
 :root {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
   'Lucida Sans', Arial, sans-serif;
@@ -34,25 +30,9 @@
   padding: 0;
 }
 
-.navbar {
-  background-color: var(--powder-blue);
-}
-
+/* Base values: body, p, h1-h3 */
 body {
   background-color: var(--prussian-blue);
-}
-
-.portfolio-app {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 800px;
-  min-height: 600px;
-  background: black;
-  text-align: center;
-  margin: 32px auto;
-  border-radius: 20px;
-  padding-bottom: 32px;
 }
 
 p {
@@ -69,6 +49,11 @@ h1 {
 
 h2 {
   color: rgb(66, 171, 231);
+  text-align: center;
+}
+
+.skills {
+  padding-right: 30%;
 }
 
 h3 {
@@ -77,26 +62,50 @@ h3 {
   font-size: 40px;
 }
 
+li {
+  font-size: 20px;
+  list-style: circle;
+  text-align: center;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+/* AboutPage */
 .about-img {
   height: 300px;
   align-self: left;
 }
 
 .about-p {
-  display: flexbox;
+  table-layout: column;
   text-align: right;
-  flex-direction: row;
+  flex-wrap: wrap;
   font-size: 25px;
+  text-shadow: 2px 2px 5px black;
 }
 
-.complete {
-  text-decoration: line-through;
-  opacity: 0.4;
+/* PorfolioCards */
+.card-title {
+  color: var(--powder-blue);
+  text-shadow: 2px 2px 5px var(--prussian-blue);
 }
 
+.deployIMG, .githhubIMG {
+  align-items: center;
+}
+
+/* ContactForm */
 .contact-form {
   margin-bottom: 32px;
   margin: 20px;
+  padding: 10%;
 }
 
 .contact-input {
@@ -118,14 +127,11 @@ h3 {
 }
 
 .contact-button {
-  padding: 16px;
-  border: none;
+  padding: 10px;
   border-radius: 2px;
   cursor: pointer;
-  outline: none;
   background: #5d0cff;
   color: #fff;
-  text-transform: capitalize;
 }
 
 .contact-input.edit {
@@ -165,14 +171,16 @@ h3 {
   cursor: pointer;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+/* Header */
+.navbar {
+  background-color: var(--powder-blue);
 }
-a:hover {
-  color: #535bf2;
-}
+
+/* Navigation */
+/* ContactPage */
+/* PortfolioPage + Project */
+/* ResumePage */
+/* Footer */
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -183,6 +191,22 @@ a:hover {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: var(--iris);
+  }
+}
+
+/* Media queries for size adjustments */
+@media screen and (max-width: 992px) {
+  main, .navbar, header, h2 {
+  flex-basis: 40%;
+  flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main, .navbar, header, h2 {
+    flex-basis: 100%;
+    margin: 1em 0;
+    flex-direction: column;
   }
 }
