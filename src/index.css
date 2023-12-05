@@ -32,6 +32,7 @@
 
 /* Base values: body, p, h1-h3 */
 body {
+  display: block;
   background-color: var(--prussian-blue);
 }
 
@@ -109,7 +110,7 @@ a:hover {
 }
 
 .githubIMG {
-  padding-left: 50%;
+  
 }
 
 .card:hover {
@@ -187,10 +188,14 @@ a:hover {
   width: 90%;
 }
 
-.icons {
-  display: flex;
+/* Footer */
+
+footer {
+  background-color: var(--celestial-blue);
+}
+.footerIcons {
   align-items: center;
-  font-size: 24px;
+  padding: 100px 50px;
   cursor: pointer;
 }
 
@@ -203,7 +208,6 @@ a:hover {
 /* ContactPage */
 /* PortfolioPage + Project */
 /* ResumePage */
-/* Footer */
 
 @media (prefers-color-scheme: light) {
   :root {

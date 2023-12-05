@@ -1,16 +1,16 @@
 export default function Footer() {
     return (
-        <Grid>
-            <div class="footer"><center className="footerIcons">
-                <a href="">
-                    <img src="giticon.png" className="gitHubIcon" />
-                </a>
-                <a href="">
-                    <img src="linkedinicon.png" className="linkedInIcon" />
-                </a>
-            </center>
-            </div>
-        </Grid>
+    <footer>
+        <div class="footer"><center className="footerIcons">
+            <a href="https://github.com/AllieStewart">
+            <img src="./src/assets/portfolio_icons/GH_icon.svg" className="gitHubIcon" />
+            </a>
+            <a href="https://www.linkedin.com/in/allie-stewart-72a090107/">
+            <img src="../src/assets/portfolio_icons/LI_icon.png" height="96px"className="linkedInIcon" />
+            </a>
+        </center>
+        </div>
+    </footer>
     );
 }
 // Links to GitHub, LinkedIn, and misc social media profile
