@@ -11,11 +11,7 @@
   color-scheme: light dark;
   color: black;
 
-  /* font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%; */
+  -webkit-text-size-adjust: 100%;
 
   --prussian-blue: #04395eff;
   --powder-blue: #adcef6ff;
@@ -30,14 +26,15 @@
   padding: 0;
 }
 
-/* Base values: body, p, h1-h3 */
+/* Base values: body, p, h1-h5 */
 body {
   display: block;
   background-color: var(--prussian-blue);
 }
 
 p {
-  color: var(--cornflower-blue)
+  color: var(--cornflower-blue);
+  text-shadow: 2px 2px 5px var(--iris);
 }
 
 h1 {
@@ -46,27 +43,28 @@ h1 {
   font-size: 24px;
   font-size: 3.2em;
   line-height: 1.1;
+  text-shadow: 2px 2px 5px black;
 }
 
 h2 {
   color: rgb(66, 171, 231);
   text-align: center;
-}
-
-.skills {
-  padding-right: 30%;
+  text-shadow: 2px 2px 5px black;
 }
 
 h3 {
   margin: auto;
   color: rgb(66, 171, 231);
   font-size: 40px;
+  text-shadow: 2px 2px 5px black;
 }
 
 li {
   font-size: 20px;
   list-style: circle;
   text-align: center;
+  color: var(--cornflower-blue);
+  text-shadow: 2px 2px 5px black;
 }
 
 a {
@@ -79,38 +77,48 @@ a:hover {
 }
 
 /* AboutPage */
+.about-title {
+  margin-bottom: 5px;
+}
 .about-img {
-  height: 300px;
+  display: inline-block;
+  height: 400px;
   align-self: left;
+  padding: 15px;
+  margin-bottom: 10%;
 }
 
 .about-p {
   table-layout: column;
-  text-align: right;
-  flex-wrap: wrap;
   font-size: 25px;
   text-shadow: 2px 2px 5px black;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-left: 50px;
 }
 
 /* PorfolioCards */
 .card-title {
-  color: var(--powder-blue);
-  text-shadow: 2px 2px 5px var(--prussian-blue);
+  color: var(--iris);
+  text-shadow: 2px 2px 5px var(--powder-blue);
   font-size: 30px;
   text-align: center;
 }
 
 .card {
-  filter:brightness(50%);
+  filter: brightness(50%);
 }
 
 .deployIMG {
   filter: grayscale();
-  padding-left: 20px;
+  padding-inline-start: 30%;
 }
 
 .githubIMG {
-  
+  align-self: center;
+  padding-inline-start: 10%;
 }
 
 .card:hover {
@@ -126,28 +134,18 @@ a:hover {
 }
 
 /* ContactForm */
-.contact-form {
-  margin-bottom: 32px;
-  margin: 20px;
-  padding: 10%;
+.error-text {
+  color: white;
 }
 
-.contact-input {
+.email-input, .name-input, .message-input {
   padding: 14px 32px 14px 16px;
   border-radius: 4px;
   border: 2px solid #5d0cff;
   outline: none;
   width: 320px;
-  background: transparent;
-  color: #fff;
-  display: block;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  width: 100%;
-}
-
-.contact-input::placeholder {
-  color: #e2e2e2;
+  font-weight: 300;
+  color: var(--cornflower-blue);
 }
 
 .contact-button {
@@ -158,44 +156,21 @@ a:hover {
   color: #fff;
 }
 
-.contact-input.edit {
-  border: 2px solid #149fff;
-}
-
-.contact-button.edit {
-  background: linear-gradient(
-    90deg,
-    rgba(20, 159, 255, 1) 0%,
-    rgba(17, 122, 255, 1) 100%
-  );
-  padding: 16px 22px;
-}
-
 .contact-container {
+  justify-content: space-between;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   position: relative;
 }
 
-.contact-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 4px auto;
-  color: #fff;
-  padding: 16px;
-  border-radius: 5px;
-  width: 90%;
-}
-
 /* Footer */
-
 footer {
   background-color: var(--celestial-blue);
 }
+
 .footerIcons {
   align-items: center;
-  padding: 100px 50px;
+  padding: 80px 50px;
   cursor: pointer;
 }
 
@@ -204,10 +179,45 @@ footer {
   background-color: var(--powder-blue);
 }
 
-/* Navigation */
-/* ContactPage */
-/* PortfolioPage + Project */
 /* ResumePage */
+.resume {
+  margin-bottom: 5%;
+}
+
+.resume-title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.resume-pdf {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.skills {
+  padding-right: 30%;
+}
+
+/* Navigation */
+.nav-link {
+  color: var(--cornflower-blue);
+  font-weight: 500;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px white;
+}
+
+/* Project */
+.project-title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* ResumePage, ContactPage, PortfolioPage tbd values */
 
 @media (prefers-color-scheme: light) {
   :root {

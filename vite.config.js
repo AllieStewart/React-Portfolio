@@ -1,3 +1,5 @@
+// Start of JS file
+// The vite config file for launching front-end applications.
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
@@ -9,3 +11,4 @@ export default defineConfig({
     open: true
   }
 })
+// End of JS file

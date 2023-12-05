@@ -1,3 +1,5 @@
+// Start of JSX file
+// Footer that displays my GitHub and LinkedIn links.
 export default function Footer() {
     return (
     <footer>
@@ -14,3 +16,4 @@ export default function Footer() {
     );
 }
 // Links to GitHub, LinkedIn, and misc social media profile
+// End of JSX file

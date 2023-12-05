@@ -1,3 +1,5 @@
+// Start of JSX file
+// Contact page that imports contact form.
 import ContactForm from '../components/UI/ContactForm';
 
 export default function ContactPage() {
@@ -9,3 +11,4 @@ export default function ContactPage() {
         </div>
     );
 }
+// End of JSX file

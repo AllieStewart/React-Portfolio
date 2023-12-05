@@ -1,3 +1,5 @@
+// Start of JSX
+// Main file for page paths and page loads.
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -38,3 +40,4 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
 );
+// End of JSX

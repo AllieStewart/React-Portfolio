@@ -1,3 +1,5 @@
+// Start of JSX file
+// Portfolio cards for Project, for PortfolioPage.
 import githubLogo from '../../../src/assets/portfolio_icons/GH_icon.svg';
 import deployLogo from '../../../src/assets/portfolio_icons/heroku_icon.svg';
 import burgerProj1 from '../../../src/assets/portfolio_icons/project1_burger.svg';
@@ -103,3 +105,4 @@ export default function CardBody() {
   </div>
     );
 }
+// End of JSX file

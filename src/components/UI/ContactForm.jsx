@@ -1,3 +1,5 @@
+// Start of JSX file
+// Contact form for the ContactPage.
 import { useState } from 'react';
 import { validateEmail } from './helpers';
 // handleFormSubmit for Name, Email, Message
@@ -10,7 +12,6 @@ function ContactForm() {
     const [errorMessage, setErrorMessage] = useState('');
 
     const handleChange = (e) => {
-        // setInput(e.target.value);
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
@@ -27,11 +28,6 @@ function ContactForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // props.onSubmit({
-        //     name: name,
-        //     email: email,
-        //     message: message
-        // })
         if(!validateEmail(email)){
             setErrorMessage('Email is invalid.');
             return;
@@ -44,29 +40,18 @@ function ContactForm() {
     };
 
     return (
-        <div className="container text-center">
+<div className="mb-3 contact-container text-center">
             <form className='contact-form' onSubmit={handleSubmit}>
-                <input type="text"
-                placeholder='Name'
-                value={name}
-                name='name'
-                className='name-input'
-                onChange={handleChange}
-                ></input>
-                <input type="email"
-                placeholder='random@gmail.com'
-                value={email}
-                name='email'
-                className='email-input'
-                onChange={handleChange}
-                ></input>
-                <input type="text"
-                placeholder='Type your message here...'
-                value={message}
-                name='message'
-                className='message-input'
-                onChange={handleChange}
-                ></input>
+
+            <input type="text" placeholder='Name' value={name} name='name' className='name-input mb-3' onChange={handleChange}>
+            </input>
+
+            <input type="email" placeholder='random@gmail.com' value={email} name='email' className='email-input mb-3' onChange={handleChange}>
+            </input>
+
+            <input type="text" placeholder='Type your message here...' value={message} name='message' className='message-input mb-3' onChange={handleChange}>
+            </input>
+
                 <button className='contact-button' type="button">Contact</button>
             </form>
             {errorMessage && (
@@ -74,8 +59,9 @@ function ContactForm() {
           <p className="error-text">{errorMessage}</p>
         </div>
       )} 
-        </div>
+      </div>
     );
 }
 
 export default ContactForm;
+// End of JSX file

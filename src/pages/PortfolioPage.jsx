@@ -1,3 +1,5 @@
+// Start of JSX file
+// Portfolio page that imports project.
 import Project from '../components/Project'
 
 export default function PortfolioPage() {
@@ -9,3 +11,4 @@ export default function PortfolioPage() {
         </div>
     );
 }
+// End of JSX file

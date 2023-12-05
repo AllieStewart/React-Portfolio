@@ -1,30 +1,28 @@
+// Start of JSX file
+// Resume page that has linked resume.pdf and small list of skills underneath.
 export default function ResumePage() {
     // Link Resume + display simplified skills list
     const pdfURL = "/resume/Allie_Stewart_Resume.pdf";
     return (
         <div className="resume">
-            <h1>Resume</h1>
-            <div>
-                 <iframe src={pdfURL} width="100%" height="500px" frameBorder="0"/>
+            <h1 className="resume-title">Resume</h1>
+            <div className="resume-pdf">
+            <embed src={pdfURL} width="100%" height="600px" />
             </div>
             <h2 className='skills'>Skills List</h2>
+
             <h2>Front-End</h2>
-            <li>
-                Something
-            </li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Handlebars</li>
+            <li>React</li>
 
             <h2>Back-End</h2>
-            <li>
-                Another thing
-            </li>
+            <li>Express.js</li>
+            <li>Node.js</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
         </div>
     );
 }
-
-
-{/* <ReactPDF file={{
-                    data: {pdfURL}
-                }}/> */}
-
-{/* <object data={pdfURL} type="application/pdf" width="100%" height="100%" scrolling="no">
-            </object> */}
+// End of JSX file
