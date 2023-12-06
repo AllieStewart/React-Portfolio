@@ -7,7 +7,7 @@ export default function Footer() {
             <a href="https://github.com/AllieStewart">
             <img src="../../src/assets/portfolio_icons/GH_icon.svg" className="gitHubIcon" />
             </a>
-            <a href="https://www.linkedin.com/in/allie-stewart-72a090107/">
+            <a href="https://www.linkedin.com/in/allie-j-stewart/">
             <img src="../../src/assets/portfolio_icons/LI_icon.png" height="96px"className="linkedInIcon" />
             </a>
         </center>
