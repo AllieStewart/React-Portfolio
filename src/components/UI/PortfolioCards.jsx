@@ -44,7 +44,7 @@ export default function CardBody() {
 
       <div class="col">
       <div class="card bg-primary h-100">
-      <img src="/portfolio/rizzomatic.png" class="card-img" alt="Rizz-O-Matic, a way to get pick-up lines to use on the go."></img>
+      <img src="/portfolio/project3.png" class="card-img" alt="Rizz-O-Matic, a way to get pick-up lines to use on the go."></img>
         <div class="card-img-overlay">
         <h5 class="card-title">Project 3</h5>
         <a className="deployIMG" href="https://ajsreactportfolio.netlify.app/">
