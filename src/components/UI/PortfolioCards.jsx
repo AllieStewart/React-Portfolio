@@ -4,7 +4,7 @@ import githubLogo from '../../../src/assets/portfolio_icons/GH_icon.svg';
 import deployLogo from '../../../src/assets/portfolio_icons/heroku_icon.svg';
 import burgerProj1 from '../../../src/assets/portfolio_icons/project1_burger.svg';
 import firstPortfolio from '../../../src/assets/portfolio_icons/firstportfolio.svg';
-import workDaySch from '../../../src/assets/portfolio_icons/wds_icon.svg';
+import rizzImg from '../../../src/assets/portfolio_icons/rizz.svg';
 // Name of project, with links to GitHub + deployment page
 // through icons, with a image in background.
 // card-img needs hover + blurred
@@ -41,6 +41,21 @@ export default function CardBody() {
           </div>
         </div>
       </div>
+
+      <div class="col">
+      <div class="card bg-primary h-100">
+      <img src="/portfolio/rizzomatic.png" class="card-img" alt="Rizz-O-Matic, a way to get pick-up lines to use on the go."></img>
+        <div class="card-img-overlay">
+        <h5 class="card-title">Project 3</h5>
+        <a className="deployIMG" href="https://ajsreactportfolio.netlify.app/">
+        <img src={rizzImg}></img>
+        </a>
+        <a className="githubIMG" href="https://github.com/AllieStewart/Rizz-o-matic">
+        <img src={githubLogo}></img>
+        </a>
+        </div>
+      </div>
+    </div>
 
       <div class="col">
         <div class="card bg-primary h-100">
@@ -81,21 +96,6 @@ export default function CardBody() {
         <img src={deployLogo}></img>
         </a>
         <a className="githubIMG" href="https://github.com/AllieStewart/Note-Taker-Express">
-        <img src={githubLogo}></img>
-        </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="card bg-primary h-100">
-      <img src="/portfolio/workdayscheduler.png" class="card-img" alt="Work Day Scheduler with 9am to 5pm time slots and current time format."></img>
-        <div class="card-img-overlay">
-        <h5 class="card-title">Work Day Scheduler</h5>
-        <a className="deployIMG" href="https://alliestewart.github.io/challenge-5/">
-        <img src={workDaySch}></img>
-        </a>
-        <a className="githubIMG" href="https://github.com/AllieStewart/challenge-5">
         <img src={githubLogo}></img>
         </a>
         </div>
