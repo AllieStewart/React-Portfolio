@@ -11,7 +11,7 @@ export default function Footer() {
             <img src={githubLogo} className="gitHubIcon" />
             </a>
             <a href="https://www.linkedin.com/in/allie-j-stewart/">
-            <img src={linkedInLogo} height="96px"className="linkedInIcon" />
+            <img src={linkedInLogo} height="96px" className="linkedInIcon" />
             </a>
         </center>
         </div>
