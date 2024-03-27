@@ -47,7 +47,7 @@ export default function CardBody() {
       <img src="/portfolio/project3.png" class="card-img" alt="Rizz-O-Matic, a way to get pick-up lines to use on the go."></img>
         <div class="card-img-overlay">
         <h5 class="card-title">Project 3</h5>
-        <a className="deployIMG" href="https://ajsreactportfolio.netlify.app/">
+        <a className="deployIMG" href="https://rizz-o-matic-proj3-f61a0e80f0f7.herokuapp.com/">
         <img src={rizzImg}></img>
         </a>
         <a className="githubIMG" href="https://github.com/AllieStewart/Rizz-o-matic">
